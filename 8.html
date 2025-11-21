@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arkusz-08.06.2025</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer, .kontener-glowny, .blok-nav, .blok-glowny, .blok-nav-item, .sekcja-glowna-item {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+
+        header, footer {
+            background-color: white;
+        }
+
+ 
+        .kontener-glowny {
+            display: flex; 
+            flex-grow: 1;
+            padding: 0;
+            margin: 5px;
+            border: none; 
+            background-color: whitesmoke;
+        }
+ 
+        .blok-nav {
+            flex: 1; 
+            display: flex;
+            flex-direction: column; 
+            background-color: white;
+            margin-right: 5px;
+        }
+        
+        .blok-nav-item {
+            flex-grow: 1; 
+            margin: 5px;
+            background-color: white;
+        }
+
+        .blok-glowny {
+            flex: 3; 
+            display: flex;
+            flex-direction: column; 
+            background-color: whitesmoke;
+            margin-left: 5px;
+        }
+        
+        .sekcja-glowna-item {
+            flex-grow: 1; 
+            margin: 5px;
+            background-color: white;
+        }
+        .blok-nav, .blok-glowny {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blok nagłówkowy</h1>
+    </header>
+
+    <div class="kontener-glowny">
+        
+        <nav class="blok-nav">
+            <h2>Blok nawigacyjny</h2>
+            <section class="blok-nav-item">
+                <h3>Blok 1</h3>
+            </section>
+
+            <section class="blok-nav-item">
+                <h3>Blok 2</h3>
+            </section>
+
+            <section class="blok-nav-item">
+                <h3>Blok 3</h3>
+            </section>
+        </nav>
+
+        <main class="blok-glowny">
+            <h2>Blok główny</h2>
+            <section class="sekcja-glowna-item">
+                <h3>Sekcja 1</h3>
+            </section>
+
+            <section class="sekcja-glowna-item">
+                <h3>Sekcja 2</h3>
+            </section>
+
+            <section class="sekcja-glowna-item">
+                <h3>Sekcja 3</h3>
+            </section>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>Blok stopki</p>
+    </footer>
+
+</body>
+</html>

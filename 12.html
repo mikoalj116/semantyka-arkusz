@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arkusz-12.06.2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            border: 2px solid black; 
+        }
+
+    
+        header, .blok-artykulu, main, footer {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+
+
+        header {
+            background-color: white;
+        }
+
+
+        .blok-artykulu {
+            background-color: white;
+            text-align: left;
+            padding: 40px 20px;
+        }
+
+
+        main {
+            text-align: left;
+            padding: 10px 0 30px 0; 
+        }
+        
+        .main-title {
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+
+        .blok-glowny-flex {
+            display: flex; 
+            justify-content: space-between; 
+            padding: 0 20px;
+        }
+
+
+        .sekcja {
+            flex: 1; 
+            padding: 20px 10px;
+            margin: 0 10px; 
+            min-height: 150px;
+            border: 1px solid black; 
+            text-align: center;
+            background-color: white;
+        }
+
+
+        footer {
+            background-color: white;
+            border-bottom: none; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Blok nagłówkowy</h1>
+        </header>
+
+        <article class="blok-artykulu">
+            <h2>Blok artykułu</h2>
+        </article>
+
+        <main>
+            <div class="main-title">Blok główny</div>
+
+            <div class="blok-glowny-flex">
+                
+                <section class="sekcja">
+                    <h3>Sekcja pierwsza</h3>
+                </section>
+                
+                <section class="sekcja">
+                    <h3>Sekcja druga</h3>
+                </section>
+                
+                <section class="sekcja">
+                    <h3>Sekcja trzecia</h3>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>Blok stopki</p>
+        </footer>
+        
+    </div>
+
+</body>
+</html>

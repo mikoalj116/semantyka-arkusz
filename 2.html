@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>arkusz-02.06.2025</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 20%;
+            background: #fafafa;
+            border-right: 1px solid #000;
+            padding: 20px;
+        }
+        .right-column {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            border-left: none;
+        }
+
+        .block {
+            border: 1px solid #000;
+            padding: 20px;
+        }
+
+        .header {
+            border-top: none;
+        }
+
+        .footer {
+            margin-top: auto;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout">
+    <div class="sidebar">
+        Blok boczny
+    </div>
+
+    <div class="right-column">
+        <div class="block header">Blok nagłówkowy</div>
+        <div class="block">Blok nawigacyjny</div>
+        <div class="block" style="flex-grow: 1;">Blok główny</div>
+        <div class="block footer">Blok stopki</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arkusz-05.06.2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, .sekcja-obrazow, main, footer, .lewa, .kolumna-prawa, nav, .prawa {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+
+        header { background-color: white; }
+        .sekcja-obrazow { background-color: lightgray; }
+
+    
+        main {
+            display: flex; 
+            flex-grow: 1;
+            background-color: whitesmoke;
+        }
+
+
+        .lewa {
+            flex: 2; 
+            background-color: white;
+            margin-right: 5px;
+        }
+
+
+        .kolumna-prawa {
+            flex: 1; 
+            display: flex;
+            flex-direction: column; 
+            margin-left: 5px;
+        }
+
+        nav, .prawa {
+            flex-grow: 1; 
+            background-color: white;
+            margin: 5px 0; 
+        }
+        nav { margin-bottom: 5px; } 
+        .prawa { margin-top: 5px; }
+
+
+
+        footer {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blok nagłówkowy</h1>
+    </header>
+
+    <section class="sekcja-obrazow">
+        <h2>Blok sekcji obrazów</h2>
+        </section>
+
+    <main>
+        <section class="lewa">
+            <h3>Blok sekcji lewej</h3>
+            <p>Główna, długa treść strony.</p>
+        </section>
+
+        <div class="kolumna-prawa">
+            
+            <nav>
+                <h4>Blok nawigacyjny</h4>
+                </nav>
+
+            <section class="prawa">
+                <h4>Blok sekcji prawej</h4>
+                <p>Dodatkowe informacje / reklamy.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Blok stopki</p>
+    </footer>
+
+</body>
+</html>

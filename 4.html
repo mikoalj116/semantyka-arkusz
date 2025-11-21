@@ -1,0 +1,89 @@
+0<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arkusz-04.06.2025</title>
+    <style>
+     
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, nav, main, footer, .lewa, .prawa {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+     
+        header {
+            background-color: white;
+        }
+
+
+        nav {
+            background-color: white;
+        }
+
+    
+        main {
+            display: flex; 
+            flex-grow: 1;
+            background-color: lightgray;
+        }
+
+
+        .lewa {
+            flex: 2; 
+            background-color: white;
+            margin-right: 5px;
+        }
+
+
+        .prawa {
+            flex: 1; 
+            background-color: white;
+            margin-left: 5px;
+        }
+
+
+        footer {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blok nagłówkowy</h1>
+    </header>
+
+    <nav>
+        <h2>Blok nawigacyjny</h2>
+        </nav>
+
+    <main>
+        <section class="lewa">
+            <h3>Sekcja lewa</h3>
+            <p>Główna treść strony.</p>
+        </section>
+
+        <aside class="prawa">
+            <h3>Sekcja prawa</h3>
+            <p>Pasek boczny/dodatkowe informacje.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Blok stopki</p>
+    </footer>
+
+</body>
+</html>

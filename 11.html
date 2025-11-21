@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemat Strony 2</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 960px;
+            margin: 20px auto;
+            border: 2px solid black; 
+        }
+
+        header, .blok-glowny-grid, footer, .blok-boczny, .sekcja-1, .sekcja-2 {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        main {
+            border-bottom: 1px solid black; 
+            padding: 0; 
+        }
+        
+        .blok-glowny-naglowek {
+            padding: 10px;
+            border-bottom: 1px solid black;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .blok-glowny-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr; 
+            grid-template-rows: 1fr 1fr;
+            height: 300px; 
+            padding: 0;
+        }
+
+        .blok-boczny {
+            grid-row: 1 / 3; 
+            grid-column: 1; 
+            border-right: 1px solid black;
+        }
+
+        .sekcja-1 {
+            grid-row: 1; 
+            grid-column: 2; 
+            border-bottom: 1px solid black; 
+        }
+
+        .sekcja-2 {
+            grid-row: 2; 
+            grid-column: 2; 
+        }
+        footer {
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <main>
+            <div class="blok-glowny-naglowek">Blok główny</div>
+
+            <div class="blok-glowny-grid">
+                
+                <aside class="blok-boczny">
+                    <h3>Blok boczny</h3>
+                </aside>
+                
+                <section class="sekcja-1">
+                    <h3>Sekcja 1</h3>
+                </section>
+                
+                <section class="sekcja-2">
+                    <h3>Sekcja 2</h3>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>Blok stopki</p>
+        </footer>
+        
+    </div>
+
+</body>
+</html>

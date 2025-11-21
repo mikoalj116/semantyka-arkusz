@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arkusz-09.06.2025</title>
+    <style>
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+
+header, footer, nav, section, aside, .blok-glowny {
+    border: 1px solid black;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+
+.blok-naglowkowy {
+    background-color: white;
+}
+
+.blok-stopki {
+    background-color: white;
+}
+
+
+.blok-glowny-kontener {
+    display: flex;
+    flex: 1; 
+    padding: 5px;
+    margin: 5px;
+}
+
+.blok-glowny {
+    flex: 3; 
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+    padding: 0;
+    border: none; 
+}
+
+
+.blok-boczny {
+    flex: 1; 
+    background-color: white;
+}
+
+.blok-nawigacyjny {
+    background-color: white;
+    color: black;
+}
+
+
+.tresc-glowna {
+    display: flex; 
+    flex: 1; 
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.sekcja-lewa {
+    flex: 1; 
+    background-color: white;
+    color: black;
+}
+
+.sekcja-srodkowa {
+    flex: 1; 
+    background-color: white;
+    color: black;
+}
+
+
+.blok-glowny .blok-nawigacyjny,
+.blok-glowny .tresc-glowna > * {
+    margin: 5px; 
+}
+</style>
+</head>
+
+<body>
+
+    <header class="blok-naglowkowy">
+        Blok nagłówkowy
+    </header>
+
+    <main class="blok-glowny-kontener">
+        <div class="blok-glowny">
+
+            <nav class="blok-nawigacyjny">
+                Blok nawigacyjny
+            </nav>
+
+            <div class="tresc-glowna">
+                <section class="sekcja-lewa">
+                    Sekcja lewa
+                </section>
+                <section class="sekcja-srodkowa">
+                    Sekcja środkowa
+                </section>
+            </div>
+
+        </div>
+
+        <aside class="blok-boczny">
+            Blok boczny
+        </aside>
+
+    </main>
+
+    <footer class="blok-stopki">
+        Blok stopki
+    </footer>
+
+</body>
+</html>
